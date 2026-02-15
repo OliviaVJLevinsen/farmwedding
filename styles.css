@@ -301,3 +301,18 @@ main {
   object-fit: cover;
   object-position: center 45%;
 }
+
+.lang-btn {
+  border: 1px solid #d6c8bc;
+  background: #fffdfa;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lang-btn:hover {
+  background: #f3ebe3;
+}
