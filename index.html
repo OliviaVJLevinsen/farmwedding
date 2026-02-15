@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anders og Olivias Bryllup</title>
+  <meta name="description" content="Bryllupsdetaljer for Anders og Olivia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a href="#details">Detaljer</a>
+      <a href="#schedule">Program</a>
+      <a href="#travel">Transport</a>
+      <a href="#gallery">Galleri</a>
+      <a href="#rsvp">RSVP</a>
+    </nav>
+    <div class="hero-banner">
+      <img src="images/IMG_3027.jpg" alt="Solnedgang med Anders og Olivia" loading="eager">
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow">Sammen med deres familier</p>
+      <h1>Anders og Olivias Bryllup</h1>
+      <p class="date">Lørdag den 8. august 2026</p>
+      <p class="location">Søby Kirke</p>
+      <a class="btn" href="#rsvp">RSVP</a>
+    </div>
+    <div class="countdown" id="countdown" aria-live="polite"></div>
+  </header>
+
+  <main>
+    <section id="details" class="card-grid">
+      <article class="card">
+        <h2>Ceremoni</h2>
+        <p>Kl. 14.00</p>
+        <p>Søby Kirke (Søby Kirkevej 10, 8450 Hammel)</p>
+      </article>
+      <article class="card">
+        <h2>Fest</h2>
+        <p>Efter ceremonien</p>
+        <p>Mølgårde (Sporup Kirkevej 95, 8450 Hammel)</p>
+      </article>
+      <article class="card">
+        <h2>Dresscode</h2>
+        <p>Du kan jo finde din indre cowgirl eller farmboy frem, køre en Krøyer-sommer eller bare tage det du allerhelst vil have på!</p>
+      </article>
+    </section>
+
+    <section id="schedule" class="panel">
+      <h2>Bryllupsdag</h2>
+      <ul class="timeline">
+        <li><span>13.30</span>Gæster ankommer til Søby Kirke</li>
+        <li><span>14.00</span>Ceremoni i Søby Kirke</li>
+        <li><span>15.30</span>Transport til festlokation</li>
+        <li><span>16.00</span>Velkomst og reception</li>
+        <li><span>18.30</span>Middag og fest</li>
+      </ul>
+    </section>
+
+    <section id="travel" class="panel split">
+      <div>
+        <h2>Transport & ophold</h2>
+        <p>Ceremonien holdes i Søby Kirke. Derefter holdes festen på Rasmus Levinsens gård Mølgårde. Vi går i samlet flok til festen (1,7 km). Skriv til os hvis I har brug for en taxa mellem kirken og gården.</p>
+        <p>Transporten til kirken kan foregå med taxa fra Aarhus, bus 118 (stopper godt nok 2,5 kilometer fra kirken), eller via samkørsel. Vi vil sætte noget samkørsel op tættere på bryllupsdatoen.</p>
+        <p>Der vil være mulighed for at overnatte i stald eller på marken i telt. Vi vil lave en fælles morgenmad om søndagen, for dem der overnatter.</p>
+      </div>
+      <div class="accent-box">
+        <h3>Adresse til festen</h3>
+        <p>Mølgårde<br>(<a href="https://www.google.com/maps/place/Sporup+Kirkevej+95,+8450+Hammel/@56.2338484,9.8196278,17z/data=!3m1!4b1!4m6!3m5!1s0x464c0c6c29310a1d:0x99190a69455ddbdc!8m2!3d56.2338454!4d9.8222027!16s%2Fg%2F11c1v1lcw7?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Sporup Kirkevej 95, 8450 Hammel</a>)</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="panel">
+      <h2>Galleri</h2>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-main">
+          <img src="images/latest_2.jpeg" alt="Anders og Olivia" loading="lazy">
+          <figcaption>Pfeiffer Beach, Californien 2025</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/latest_1.jpeg" alt="Anders og Olivia" loading="lazy">
+          <figcaption>Saint-Uze, 2021</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/IMG_4213.jpg" alt="Anders og Olivia på skiferie" loading="lazy">
+          <figcaption>Val Thorens, 2022</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/IMG_2704.jpg" alt="Anders og Olivia" loading="lazy">
+          <figcaption>Yosemite, 2025</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="rsvp" class="panel center">
+      <h2>RSVP</h2>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdYkzQQ9kJjhd-j74_1K355utf0yBkh7f2HvvxLQKMHVUNSAQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Åbn RSVP-formular</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Vi glæder os til at fejre dagen med jer.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
