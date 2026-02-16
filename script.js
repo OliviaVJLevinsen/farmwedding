@@ -17,6 +17,7 @@ const i18n = {
     heroDate: "Lørdag den 8. august 2026",
     heroLocation: "Søby Kirke",
     heroRsvpBtn: "RSVP",
+    heroBannerCaption: "Pfeiffer Beach, Californien 2025",
     detailsCeremonyTitle: "Ceremoni",
     detailsCeremonyTime: "Kl. 14.00",
     detailsCeremonyPlace: "Søby Kirke (Søby Kirkevej 10, 8450 Hammel)",
@@ -52,24 +53,25 @@ const i18n = {
     heroEyebrow: "Together with you",
     heroTitle: "Anders and Olivia's Wedding",
     heroDate: "Saturday, August 8, 2026",
-    heroLocation: "Soby Church",
+    heroLocation: "Søby Church",
     heroRsvpBtn: "RSVP",
+    heroBannerCaption: "Pfeiffer Beach, California 2025",
     detailsCeremonyTitle: "Ceremony",
     detailsCeremonyTime: "2:00 PM",
-    detailsCeremonyPlace: "Soby Church (Soby Kirkevej 10, 8450 Hammel)",
+    detailsCeremonyPlace: "Søby Church (Søby Kirkevej 10, 8450 Hammel)",
     detailsPartyTitle: "Party",
     detailsPartyTime: "After the ceremony",
-    detailsPartyPlace: "Molgarde (Sporup Kirkevej 95, 8450 Hammel)",
+    detailsPartyPlace: "Mølgårde (Sporup Kirkevej 95, 8450 Hammel)",
     detailsDresscodeTitle: "Dress code",
     detailsDresscodeText: "Feel free to bring out your inner cowgirl or farmboy, go for a Krøyer summer look, or simply wear what you love the most!",
     scheduleTitle: "Wedding Day",
-    schedule1330: "Arrival at Soby Church",
-    schedule1400: "Ceremony at Soby Church",
+    schedule1330: "Arrival at Søby Church",
+    schedule1400: "Ceremony at Søby Church",
     schedule1530: "Walk/transport to the party venue",
     schedule1600: "Welcome and reception",
     schedule1830: "Dinner and celebration",
     travelTitle: "Travel & stay",
-    travelP1: "The ceremony takes place at Soby Church. Afterwards, the party will be held at Mølgårde, Rasmus Levinsen's farm. We will walk together to the party venue (1.7 km). Please contact us if you need a taxi between the church and the farm.",
+    travelP1: "The ceremony takes place at Søby Church. Afterwards, the party will be held at Mølgårde, Rasmus Levinsen's farm. We will walk together to the party venue (1.7 km). Please contact us if you need a taxi between the church and the farm.",
     travelP2: "Transport to the church can be arranged by taxi from Aarhus, bus 118 (which stops about 2.5 km from the church), or carpooling. We will organize ride-sharing closer to the wedding date.",
     travelP3: "There will be an option to stay overnight in the stable area or camp in the field. We will host a shared breakfast on Sunday for everyone staying overnight.",
     addressTitle: "Party address",
@@ -105,6 +107,7 @@ function applyLanguage(lang) {
   setText("hero-date", t.heroDate);
   setText("hero-location", t.heroLocation);
   setText("hero-rsvp-btn", t.heroRsvpBtn);
+  setText("hero-banner-caption", t.heroBannerCaption);
 
   setText("details-ceremony-title", t.detailsCeremonyTitle);
   setText("details-ceremony-time", t.detailsCeremonyTime);

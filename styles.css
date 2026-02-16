@@ -316,3 +316,10 @@ main {
 .lang-btn:hover {
   background: #f3ebe3;
 }
+
+.hero-banner-caption {
+  margin: 0.45rem 0 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
