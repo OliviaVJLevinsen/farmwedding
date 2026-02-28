@@ -6,18 +6,17 @@ let currentLang = localStorage.getItem("wedding_lang") || "da";
 
 const i18n = {
   da: {
-    pageTitle: "Anders og Olivias Bryllup",
+    pageTitle: "Olivia og Anders Bryllup",
     navDetails: "Detaljer",
     navSchedule: "Program",
     navTravel: "Transport",
     navGallery: "Galleri",
-    navRsvp: "RSVP",
+    navRsvp: "S.U.",
     heroEyebrow: "Sammen med jer",
-    heroTitle: "Anders og Olivias Bryllup",
+    heroTitle: "Olivia og Anders Bryllup",
     heroDate: "Lørdag den 8. august 2026",
     heroLocation: "Søby Kirke",
-    heroRsvpBtn: "RSVP",
-    heroBannerCaption: "Pfeiffer Beach, Californien 2025",
+    heroRsvpBtn: "S.U.",
     detailsCeremonyTitle: "Ceremoni",
     detailsCeremonyTime: "Kl. 14.00",
     detailsCeremonyPlace: "Søby Kirke (Søby Kirkevej 10, 8450 Hammel)",
@@ -38,24 +37,23 @@ const i18n = {
     travelP3: "Der vil være mulighed for at overnatte i stald eller på marken i telt. Vi vil lave en fælles morgenmad om søndagen, for dem der overnatter.",
     addressTitle: "Adresse til festen",
     galleryTitle: "Galleri",
-    rsvpBtn: "Åbn RSVP-formular",
+    rsvpBtn: "S.U.",
     footerText: "Vi glæder os til at fejre dagen med jer.",
     countdownDone: "I dag er dagen.",
     countdownFmt: (d, h, m) => `${d} dage, ${h} timer, ${m} minutter tilbage`
   },
   en: {
-    pageTitle: "Anders and Olivia's Wedding",
+    pageTitle: "Olivia and Anders' Wedding",
     navDetails: "Details",
     navSchedule: "Schedule",
     navTravel: "Travel",
     navGallery: "Gallery",
-    navRsvp: "RSVP",
+    navRsvp: "S.U.",
     heroEyebrow: "Together with you",
-    heroTitle: "Anders and Olivia's Wedding",
+    heroTitle: "Olivia and Anders' Wedding",
     heroDate: "Saturday, August 8, 2026",
     heroLocation: "Søby Church",
-    heroRsvpBtn: "RSVP",
-    heroBannerCaption: "Pfeiffer Beach, California 2025",
+    heroRsvpBtn: "S.U.",
     detailsCeremonyTitle: "Ceremony",
     detailsCeremonyTime: "2:00 PM",
     detailsCeremonyPlace: "Søby Church (Søby Kirkevej 10, 8450 Hammel)",
@@ -76,7 +74,7 @@ const i18n = {
     travelP3: "There will be an option to stay overnight in the stable area or camp in the field. We will host a shared breakfast on Sunday for everyone staying overnight.",
     addressTitle: "Party address",
     galleryTitle: "Gallery",
-    rsvpBtn: "Open RSVP form",
+    rsvpBtn: "S.U.",
     footerText: "We can't wait to celebrate with you.",
     countdownDone: "Today is the day.",
     countdownFmt: (d, h, m) => `${d} days, ${h} hours, ${m} minutes to go`
@@ -107,7 +105,6 @@ function applyLanguage(lang) {
   setText("hero-date", t.heroDate);
   setText("hero-location", t.heroLocation);
   setText("hero-rsvp-btn", t.heroRsvpBtn);
-  setText("hero-banner-caption", t.heroBannerCaption);
 
   setText("details-ceremony-title", t.detailsCeremonyTitle);
   setText("details-ceremony-time", t.detailsCeremonyTime);
