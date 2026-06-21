@@ -10,6 +10,7 @@ const i18n = {
     navDetails: "Detaljer",
     navSchedule: "Program",
     navTravel: "Transport",
+    navInfo: "Praktisk info",
     navGallery: "Galleri",
     navRsvp: "S.U.",
     heroEyebrow: "Sammen med jer",
@@ -18,7 +19,7 @@ const i18n = {
     heroLocation: "Søby Kirke",
     heroRsvpBtn: "S.U.",
     detailsCeremonyTitle: "Ceremoni",
-    detailsCeremonyTime: "Kl. 14.00",
+    detailsCeremonyTime: "Kl. 14.30",
     detailsCeremonyPlace: "Søby Kirke (Søby Kirkevej 10, 8450 Hammel)",
     detailsPartyTitle: "Fest",
     detailsPartyTime: "Efter ceremonien",
@@ -34,10 +35,18 @@ const i18n = {
     travelTitle: "Transport & ophold",
     travelP1: "Ceremonien holdes i Søby Kirke. Derefter holdes festen på Rasmus Levinsens gård Mølgårde. Vi går i samlet flok til festen (1,7 km). Skriv til os hvis I har brug for en taxa mellem kirken og gården.",
     travelP2: "Transporten til kirken kan foregå med taxa fra Aarhus, bus 118 (stopper godt nok 2,5 kilometer fra kirken), eller via samkørsel. Vi vil sætte noget samkørsel op tættere på bryllupsdatoen.",
-    travelP3: "Der vil være mulighed for at overnatte i stald eller på marken i telt. Vi vil lave en fælles morgenmad om søndagen, for dem der overnatter.",
+    travelP3: "Det vil være muligt at sove i telt på en lækker mark. Alternativt i stalden på et liggeunderlag.",
     addressTitle: "Adresse til festen",
+    infoTitle: "Praktisk info",
+    giftsTitle: "Gaver",
+    giftsText: "Vi ønsker os ikke noget, men er bare glade for, at I har lyst til at fejre os! Hvis man stadig gerne vil give noget, er der nogle idéer her:",
+    giftsItems: ["Kunst", "Tilskud til bryllupsrejse", "Store skåle eller fade", "Sengetøj og håndklæder", "Brugte eller hjemmelavede ting"],
+    toastmasterTitle: "Taler og indslag",
+    toastmasterText: "Johanne Luth (tlf. 26 35 12 52) og Jonathan Balladone (tlf. 20 86 76 55) står for toastmaster-rollen. Hvis man har indslag, kan man kontakte dem på telefon eller via mail gaardbryllup.2026@gmail.com.",
+    overnightTitle: "Overnatning",
+    overnightText: "Det vil være muligt at sove i telt på en lækker mark. Alternativt i stalden på et liggeunderlag.",
     galleryTitle: "Galleri",
-    rsvpBtn: "S.U.",
+    rsvpBtn: "Svar udbedes senest den 1. juni",
     footerText: "Vi glæder os til at fejre dagen med jer.",
     countdownDone: "I dag er dagen.",
     countdownFmt: (d, h, m) => `${d} dage, ${h} timer, ${m} minutter tilbage`
@@ -47,6 +56,7 @@ const i18n = {
     navDetails: "Details",
     navSchedule: "Schedule",
     navTravel: "Travel",
+    navInfo: "Practical info",
     navGallery: "Gallery",
     navRsvp: "S.U.",
     heroEyebrow: "Together with you",
@@ -55,7 +65,7 @@ const i18n = {
     heroLocation: "Søby Church",
     heroRsvpBtn: "S.U.",
     detailsCeremonyTitle: "Ceremony",
-    detailsCeremonyTime: "2:00 PM",
+    detailsCeremonyTime: "2:30 PM",
     detailsCeremonyPlace: "Søby Church (Søby Kirkevej 10, 8450 Hammel)",
     detailsPartyTitle: "Party",
     detailsPartyTime: "After the ceremony",
@@ -71,8 +81,16 @@ const i18n = {
     travelTitle: "Travel & stay",
     travelP1: "The ceremony takes place at Søby Church. Afterwards, the party will be held at Mølgårde, Rasmus Levinsen's farm. We will walk together to the party venue (1.7 km). Please contact us if you need a taxi between the church and the farm.",
     travelP2: "Transport to the church can be arranged by taxi from Aarhus, bus 118 (which stops about 2.5 km from the church), or carpooling. We will organize ride-sharing closer to the wedding date.",
-    travelP3: "There will be an option to stay overnight in the stable area or camp in the field. We will host a shared breakfast on Sunday for everyone staying overnight.",
+    travelP3: "It will be possible to sleep in a tent in a lovely field. Alternatively, you can sleep in the stable on a sleeping mat.",
     addressTitle: "Party address",
+    infoTitle: "Practical info",
+    giftsTitle: "Gifts",
+    giftsText: "We do not wish for anything; we are just happy that you want to celebrate with us! If you would still like to give something, here are a few ideas:",
+    giftsItems: ["Art", "Contribution to our honeymoon", "Large bowls or serving dishes", "Bed linen and towels", "Second-hand or homemade things"],
+    toastmasterTitle: "Speeches and contributions",
+    toastmasterText: "Johanne Luth (tel. +45 26 35 12 52) and Jonathan Balladone (tel. +45 20 86 76 55) will be the toastmasters. If you have a speech, song, or another contribution, please contact them by phone or by email at gaardbryllup.2026@gmail.com.",
+    overnightTitle: "Overnight stay",
+    overnightText: "It will be possible to sleep in a tent in a lovely field. Alternatively, you can sleep in the stable on a sleeping mat.",
     galleryTitle: "Gallery",
     rsvpBtn: "S.U.",
     footerText: "We can't wait to celebrate with you.",
@@ -86,6 +104,17 @@ function setText(id, value) {
   if (el) el.textContent = value;
 }
 
+function setList(id, items) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.innerHTML = "";
+  items.forEach((item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    el.appendChild(li);
+  });
+}
+
 function applyLanguage(lang) {
   currentLang = lang;
   localStorage.setItem("wedding_lang", lang);
@@ -97,6 +126,7 @@ function applyLanguage(lang) {
   setText("nav-details", t.navDetails);
   setText("nav-schedule", t.navSchedule);
   setText("nav-travel", t.navTravel);
+  setText("nav-info", t.navInfo);
   setText("nav-gallery", t.navGallery);
   setText("nav-rsvp", t.navRsvp);
 
@@ -127,6 +157,15 @@ function applyLanguage(lang) {
   setText("travel-p2", t.travelP2);
   setText("travel-p3", t.travelP3);
   setText("address-title", t.addressTitle);
+
+  setText("info-title", t.infoTitle);
+  setText("gifts-title", t.giftsTitle);
+  setText("gifts-text", t.giftsText);
+  setList("gifts-list", t.giftsItems);
+  setText("toastmaster-title", t.toastmasterTitle);
+  setText("toastmaster-text", t.toastmasterText);
+  setText("overnight-title", t.overnightTitle);
+  setText("overnight-text", t.overnightText);
 
   setText("gallery-title", t.galleryTitle);
   setText("rsvp-btn", t.rsvpBtn);
